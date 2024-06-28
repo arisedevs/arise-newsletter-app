@@ -29,7 +29,7 @@ function Form() {
         e.preventDefault();
         
         try {
-          const response = await axios.post("http://localhost:8000/api/subscribe", formData);
+          const response = await axios.post("https://arisenewsletterapi.vercel.app/api/subscribe", formData);
 
           console.log(response.data);
 
